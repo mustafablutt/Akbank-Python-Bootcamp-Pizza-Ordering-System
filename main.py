@@ -200,7 +200,6 @@ def main():
             writer = csv.writer(orders_file)
             now = datetime.datetime.now()
             date_string = now.strftime("%Y-%m-%d %H:%M:%S")
-            # Sipariş bilgilerini dosyaya yazdıralım
             writer.writerow([date_string, customer.get_name(), customer.get_surname(), customer.get_tc(), customer.get_credit_card(), pizza.get_description(), ", ".join(topping_choices), pizza.get_cost()])
 
 if __name__ == '__main__':
