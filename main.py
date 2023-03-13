@@ -190,12 +190,12 @@ def main():
         print(pizza.get_description())
         print("Toplam maliyet: $%.2f" % pizza.get_cost())
 
-        # Müşteri bilgilerini alalım
+        
         customer = get_customer_info()
         print("Müşteri bilgileri:")
         print(customer)
 
-        # Sipariş bilgilerini kaydetmek için dosyayı açalım
+      
         with open('orders.csv', mode='a', newline='') as orders_file:
             writer = csv.writer(orders_file)
             now = datetime.datetime.now()
